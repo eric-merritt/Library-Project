@@ -12,7 +12,7 @@ div {
 }
 
 .library {
-    width: 85%;
+    width: 65%;
     height: 100%;
     background-color: cornflowerblue;
     margin: auto;
@@ -24,11 +24,13 @@ div {
 .display{
     display: grid;
     grid: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
     justify-content: center;
     background-color: #e5e5e5;
     height: 100%;
-    padding: 15px;
-    justify-items: space-between;
+    justify-items: space-around;
+
 }
 
 form {
@@ -45,21 +47,34 @@ form {
     
 }
 
-form.hidden {
+.hidden {
     display: none;
 }
 
 button.newBook {
-    width: 250px;
+    width: 15%;
     padding: 10px;
     font-size: 1.25rem;
     font-weight: 800;
 }
 
 .bookDivs {
+    width: 75%;
+    height: max(75%);
+    height: min-content;
     background-color: white;
     border-radius: 15px;
     padding: 15px;
     gap: 15px;
     text-align: left;
+    padding-left: 15%;
+}
+
+.addButtonDiv {
+    height: fit-content;
+}
+
+p {
+    font-size: 1rem; 
+    font-weight: 800;
 }
